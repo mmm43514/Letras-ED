@@ -1,0 +1,169 @@
+\hypertarget{classDiccionario}{\section{Diccionario Class Reference}
+\label{classDiccionario}\index{Diccionario@{Diccionario}}
+}
+
+
+T.\-D.\-A \hyperlink{classDiccionario}{Diccionario}.  
+
+
+
+
+{\ttfamily \#include $<$Diccionario.\-h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classDiccionario_1_1const__iterator}{const\-\_\-iterator}
+\item 
+class \hyperlink{classDiccionario_1_1iterator}{iterator}
+\begin{DoxyCompactList}\small\item\em Iterador del T\-D\-A \hyperlink{classDiccionario}{Diccionario}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDiccionario_aa0a2191ec706b256c35b5229cc197b15}{\hyperlink{classDiccionario_aa0a2191ec706b256c35b5229cc197b15}{Diccionario} ()}\label{classDiccionario_aa0a2191ec706b256c35b5229cc197b15}
+
+\begin{DoxyCompactList}\small\item\em Construye un diccionario vacío. \end{DoxyCompactList}\item 
+\hypertarget{classDiccionario_abe2e0023732c4cef7f6960120e8cde39}{int \hyperlink{classDiccionario_abe2e0023732c4cef7f6960120e8cde39}{size} () const }\label{classDiccionario_abe2e0023732c4cef7f6960120e8cde39}
+
+\begin{DoxyCompactList}\small\item\em Devuelve el numero de palabras en el diccionario. \end{DoxyCompactList}\item 
+vector$<$ string $>$ \hyperlink{classDiccionario_a780bede8a63e0790af712a2ee17b3093}{Palabras\-Longitud} (unsigned int longitud)
+\begin{DoxyCompactList}\small\item\em Obtiene todas las palabras en el diccionario de un longitud dada. \end{DoxyCompactList}\item 
+bool \hyperlink{classDiccionario_a2091d415bc53c34a0e78e7bd9b073024}{Esta} (string palabra)
+\begin{DoxyCompactList}\small\item\em Indica si una palabra está en el diccionario o no. \end{DoxyCompactList}\item 
+\hypertarget{classDiccionario_ab270eb969d580f01b358e648a3061ac4}{\hyperlink{classDiccionario_1_1iterator}{iterator} {\bfseries begin} ()}\label{classDiccionario_ab270eb969d580f01b358e648a3061ac4}
+
+\item 
+\hypertarget{classDiccionario_a7de585de002dfdec241b645bc57a3d0a}{\hyperlink{classDiccionario_1_1iterator}{iterator} {\bfseries end} ()}\label{classDiccionario_a7de585de002dfdec241b645bc57a3d0a}
+
+\item 
+\hypertarget{classDiccionario_a843b15e8b44b94b5ce264e7d3ef3e715}{\hyperlink{classDiccionario_1_1const__iterator}{const\-\_\-iterator} {\bfseries begin} () const }\label{classDiccionario_a843b15e8b44b94b5ce264e7d3ef3e715}
+
+\item 
+\hypertarget{classDiccionario_ab7c8ad4596d23054165a0ab9af0dfc96}{\hyperlink{classDiccionario_1_1const__iterator}{const\-\_\-iterator} {\bfseries end} () const }\label{classDiccionario_ab7c8ad4596d23054165a0ab9af0dfc96}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+istream \& \hyperlink{classDiccionario_a940c6d9371bca891c95a5a044a42905f}{operator$>$$>$} (istream \&is, \hyperlink{classDiccionario}{Diccionario} \&D)
+\begin{DoxyCompactList}\small\item\em Lee de un flujo de entrada un diccionario. \end{DoxyCompactList}\item 
+ostream \& \hyperlink{classDiccionario_aad8d25118e38f63c35cfc247af45a78a}{operator$<$$<$} (ostream \&os, const \hyperlink{classDiccionario}{Diccionario} \&D)
+\begin{DoxyCompactList}\small\item\em Escribe en un flujo de salida un diccionario. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+T.\-D.\-A \hyperlink{classDiccionario}{Diccionario}. 
+
+{\bfseries Definición\-:} Una instancia {\itshape a} del tipo de dato abstracto \hyperlink{classDiccionario}{Diccionario} se puede construir como un objeto vacío (diccionario obsoleto) cuando no contenga ningún elemento
+
+El \hyperlink{classDiccionario}{Diccionario} se monta en base al T.\-D.\-A \hyperlink{classArbolGeneral}{Arbol\-General}, cada palabra es alamacenada guardando sus caracteres sobre un \hyperlink{classArbolGeneral}{Arbol\-General}.
+
+Para poder usar el tipo de dato \hyperlink{classDiccionario}{Diccionario} se debe incluir el fichero
+
+{\ttfamily \#include \hyperlink{Diccionario_8h}{Diccionario.\-h}}
+
+Un ejemplo de su uso\-: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+
+
+\begin{DoxyAuthor}{Author}
+Mario Muñoz Mesa 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Enero 2016 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classDiccionario_a2091d415bc53c34a0e78e7bd9b073024}{\index{Diccionario@{Diccionario}!Esta@{Esta}}
+\index{Esta@{Esta}!Diccionario@{Diccionario}}
+\subsubsection[{Esta}]{\setlength{\rightskip}{0pt plus 5cm}bool Diccionario\-::\-Esta (
+\begin{DoxyParamCaption}
+\item[{string}]{palabra}
+\end{DoxyParamCaption}
+)}}\label{classDiccionario_a2091d415bc53c34a0e78e7bd9b073024}
+
+
+Indica si una palabra está en el diccionario o no. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em palabra} & la palabra que se quiere buscar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la palabra esta en el diccionario. False en caso contrario 
+\end{DoxyReturn}
+\hypertarget{classDiccionario_a780bede8a63e0790af712a2ee17b3093}{\index{Diccionario@{Diccionario}!Palabras\-Longitud@{Palabras\-Longitud}}
+\index{Palabras\-Longitud@{Palabras\-Longitud}!Diccionario@{Diccionario}}
+\subsubsection[{Palabras\-Longitud}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ string $>$ Diccionario\-::\-Palabras\-Longitud (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{longitud}
+\end{DoxyParamCaption}
+)}}\label{classDiccionario_a780bede8a63e0790af712a2ee17b3093}
+
+
+Obtiene todas las palabras en el diccionario de un longitud dada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em longitud} & la longitud de las palabras de salida \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un vector con las palabras de longitud especifica en el parametro de entrada 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classDiccionario_aad8d25118e38f63c35cfc247af45a78a}{\index{Diccionario@{Diccionario}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Diccionario@{Diccionario}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{os, }
+\item[{const {\bf Diccionario} \&}]{D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classDiccionario_aad8d25118e38f63c35cfc247af45a78a}
+
+
+Escribe en un flujo de salida un diccionario. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os\-:flujo} & de salida \\
+\hline
+{\em D} & el objeto diccionario que se escribe \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+el flujo de salida 
+\end{DoxyReturn}
+\hypertarget{classDiccionario_a940c6d9371bca891c95a5a044a42905f}{\index{Diccionario@{Diccionario}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Diccionario@{Diccionario}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{istream \&}]{is, }
+\item[{{\bf Diccionario} \&}]{D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classDiccionario_a940c6d9371bca891c95a5a044a42905f}
+
+
+Lee de un flujo de entrada un diccionario. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\-:flujo} & de entrada \\
+\hline
+{\em D} & el objeto donde se realiza la lectura. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+el flujo de entrada 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/pc/\-Desktop/2-\/\-Doble-\/\-Grado/\-E\-D/\-P\-R-\/\-F\-I\-N\-A\-L/letras/include/\hyperlink{Diccionario_8h}{Diccionario.\-h}\item 
+/home/pc/\-Desktop/2-\/\-Doble-\/\-Grado/\-E\-D/\-P\-R-\/\-F\-I\-N\-A\-L/letras/include/Diccionario.\-cpp\end{DoxyCompactItemize}

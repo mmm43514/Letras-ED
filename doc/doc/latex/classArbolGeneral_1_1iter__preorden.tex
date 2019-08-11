@@ -1,0 +1,89 @@
+\hypertarget{classArbolGeneral_1_1iter__preorden}{\section{Arbol\-General$<$ Tbase $>$\-:\-:iter\-\_\-preorden Class Reference}
+\label{classArbolGeneral_1_1iter__preorden}\index{Arbol\-General$<$ Tbase $>$\-::iter\-\_\-preorden@{Arbol\-General$<$ Tbase $>$\-::iter\-\_\-preorden}}
+}
+
+
+T\-D\-A. Iterador del \hyperlink{classArbolGeneral}{Arbol\-General} en preorden.  
+
+
+
+
+{\ttfamily \#include $<$Arbol\-General.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classArbolGeneral_1_1iter__preorden_a1630c38cc1bdba513fd6e850ae895455}{\hyperlink{classArbolGeneral_1_1iter__preorden_a1630c38cc1bdba513fd6e850ae895455}{iter\-\_\-preorden} ()}\label{classArbolGeneral_1_1iter__preorden_a1630c38cc1bdba513fd6e850ae895455}
+
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\hypertarget{classArbolGeneral_1_1iter__preorden_a6b4d2151f1a69832c5278671ccb91ab2}{Tbase \& \hyperlink{classArbolGeneral_1_1iter__preorden_a6b4d2151f1a69832c5278671ccb91ab2}{operator$\ast$} ()}\label{classArbolGeneral_1_1iter__preorden_a6b4d2151f1a69832c5278671ccb91ab2}
+
+\begin{DoxyCompactList}\small\item\em Obtiene la etiqueta del nodo. \end{DoxyCompactList}\item 
+\hypertarget{classArbolGeneral_1_1iter__preorden_af7998e2c1051608ecb39ef3a7e5af589}{int \hyperlink{classArbolGeneral_1_1iter__preorden_af7998e2c1051608ecb39ef3a7e5af589}{getlevel} () const }\label{classArbolGeneral_1_1iter__preorden_af7998e2c1051608ecb39ef3a7e5af589}
+
+\begin{DoxyCompactList}\small\item\em Obtiene el nivel del nodo. \end{DoxyCompactList}\item 
+\hypertarget{classArbolGeneral_1_1iter__preorden_ad99644bea6d9c67c58ff0b22fe7780d0}{\hyperlink{classArbolGeneral_1_1iter__preorden}{iter\-\_\-preorden} \& \hyperlink{classArbolGeneral_1_1iter__preorden_ad99644bea6d9c67c58ff0b22fe7780d0}{operator++} ()}\label{classArbolGeneral_1_1iter__preorden_ad99644bea6d9c67c58ff0b22fe7780d0}
+
+\begin{DoxyCompactList}\small\item\em Obtiene un iterador al siguiente nodo segun el recorrido en preorden. \end{DoxyCompactList}\item 
+bool \hyperlink{classArbolGeneral_1_1iter__preorden_a4d873c6d6af1cb848c356011f2912021}{operator==} (const \hyperlink{classArbolGeneral_1_1iter__preorden}{iter\-\_\-preorden} \&i)
+\begin{DoxyCompactList}\small\item\em Compara dos iteradores. \end{DoxyCompactList}\item 
+bool \hyperlink{classArbolGeneral_1_1iter__preorden_a7965aad2dbd42a8fad8d25b711e1b589}{operator!=} (const \hyperlink{classArbolGeneral_1_1iter__preorden}{iter\-\_\-preorden} \&i)
+\begin{DoxyCompactList}\small\item\em Compara dos iteradores. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classArbolGeneral_1_1iter__preorden_a9c06e31b7c3e0d4ee5b03003d32935a5}{class {\bfseries Arbol\-General}}\label{classArbolGeneral_1_1iter__preorden_a9c06e31b7c3e0d4ee5b03003d32935a5}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Tbase$>$class Arbol\-General$<$ Tbase $>$\-::iter\-\_\-preorden}
+
+T\-D\-A. Iterador del \hyperlink{classArbolGeneral}{Arbol\-General} en preorden. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classArbolGeneral_1_1iter__preorden_a7965aad2dbd42a8fad8d25b711e1b589}{\index{Arbol\-General\-::iter\-\_\-preorden@{Arbol\-General\-::iter\-\_\-preorden}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!ArbolGeneral::iter_preorden@{Arbol\-General\-::iter\-\_\-preorden}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Tbase$>$ bool {\bf Arbol\-General}$<$ Tbase $>$\-::iter\-\_\-preorden\-::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf iter\-\_\-preorden} \&}]{i}
+\end{DoxyParamCaption}
+)}}\label{classArbolGeneral_1_1iter__preorden_a7965aad2dbd42a8fad8d25b711e1b589}
+
+
+Compara dos iteradores. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & iterador con el que se compara \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si los dos iteradores son diferentes (la raiz o el nodo son diferentes). False en caso contrario 
+\end{DoxyReturn}
+\hypertarget{classArbolGeneral_1_1iter__preorden_a4d873c6d6af1cb848c356011f2912021}{\index{Arbol\-General\-::iter\-\_\-preorden@{Arbol\-General\-::iter\-\_\-preorden}!operator==@{operator==}}
+\index{operator==@{operator==}!ArbolGeneral::iter_preorden@{Arbol\-General\-::iter\-\_\-preorden}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Tbase$>$ bool {\bf Arbol\-General}$<$ Tbase $>$\-::iter\-\_\-preorden\-::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf iter\-\_\-preorden} \&}]{i}
+\end{DoxyParamCaption}
+)}}\label{classArbolGeneral_1_1iter__preorden_a4d873c6d6af1cb848c356011f2912021}
+
+
+Compara dos iteradores. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & iterador con el que se compara \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si los dos iteradores son iguales (la raiz y el nodo son iguales). False en caso contrario 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/pc/\-Desktop/2-\/\-Doble-\/\-Grado/\-E\-D/\-P\-R-\/\-F\-I\-N\-A\-L/letras/include/\hyperlink{ArbolGeneral_8h}{Arbol\-General.\-h}\item 
+/home/pc/\-Desktop/2-\/\-Doble-\/\-Grado/\-E\-D/\-P\-R-\/\-F\-I\-N\-A\-L/letras/include/Arbol\-General.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,104 @@
+\hypertarget{classBolsaLetras}{\section{Bolsa\-Letras Class Reference}
+\label{classBolsaLetras}\index{Bolsa\-Letras@{Bolsa\-Letras}}
+}
+
+
+T.\-D.\-A \hyperlink{classBolsaLetras}{Bolsa\-Letras}.  
+
+
+
+
+{\ttfamily \#include $<$Bolsa\-Letras.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classBolsaLetras_a17b1dc9c2da339d92cdbaae5d9a9902d}{int \hyperlink{classBolsaLetras_a17b1dc9c2da339d92cdbaae5d9a9902d}{size} ()}\label{classBolsaLetras_a17b1dc9c2da339d92cdbaae5d9a9902d}
+
+\begin{DoxyCompactList}\small\item\em Tamaño de la bolsa. \end{DoxyCompactList}\item 
+const \hyperlink{classLetra}{Letra} \& \hyperlink{classBolsaLetras_a9850b03cd6c7b1f8c874b86a4544fa06}{operator\mbox{[}$\,$\mbox{]}} (int n)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador \mbox{[}\mbox{]}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{classBolsaLetras_a239ac12c75a924d342c5cc1a9504c7c8}{operator$<$$<$} (ostream \&os, const \hyperlink{classBolsaLetras}{Bolsa\-Letras} \&b\-\_\-l)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador $<$$<$. \end{DoxyCompactList}\item 
+\hyperlink{classConjuntoLetras}{Conjunto\-Letras} \& \hyperlink{classBolsaLetras_ab034eabfb6947531efbcaf79598d7c7a}{operator$>$$>$} (\hyperlink{classConjuntoLetras}{Conjunto\-Letras} \&cl, \hyperlink{classBolsaLetras}{Bolsa\-Letras} \&bl)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador $>$$>$ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+T.\-D.\-A \hyperlink{classBolsaLetras}{Bolsa\-Letras}. 
+
+{\bfseries Definición\-:} Una instancia {\itshape a} del tipo de dato abstracto \hyperlink{classBolsaLetras}{Bolsa\-Letras} se construye como un objeto vacío que se rellena a través de un \hyperlink{classConjuntoLetras}{Conjunto\-Letras}
+
+La \hyperlink{classBolsaLetras}{Bolsa\-Letras} se monta en base y a través del T.\-D.\-A \hyperlink{classLetra}{Letra} y el T.\-D.\-A \hyperlink{classConjuntoLetras}{Conjunto\-Letras}.
+
+Almacena tantas veces repetidas las letras de \hyperlink{classConjuntoLetras}{Conjunto\-Letras} como indique su campo apariciones. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classBolsaLetras_a9850b03cd6c7b1f8c874b86a4544fa06}{\index{Bolsa\-Letras@{Bolsa\-Letras}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!BolsaLetras@{Bolsa\-Letras}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Letra}\& Bolsa\-Letras\-::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classBolsaLetras_a9850b03cd6c7b1f8c874b86a4544fa06}
+
+
+Sobrecarga del operador \mbox{[}\mbox{]}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & posición de la bolsa donde se encuentra la letra a devolver \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+letra que se encontraba el la posición n de la bolsa de letras 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classBolsaLetras_a239ac12c75a924d342c5cc1a9504c7c8}{\index{Bolsa\-Letras@{Bolsa\-Letras}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!BolsaLetras@{Bolsa\-Letras}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{os, }
+\item[{const {\bf Bolsa\-Letras} \&}]{b\-\_\-l}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classBolsaLetras_a239ac12c75a924d342c5cc1a9504c7c8}
+
+
+Sobrecarga del operador $<$$<$. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & ostream donde imprimir la bolsa de letras \\
+\hline
+{\em b\-\_\-l} & bolsa de letras a imprimir \\
+\hline
+\end{DoxyParams}
+\hypertarget{classBolsaLetras_ab034eabfb6947531efbcaf79598d7c7a}{\index{Bolsa\-Letras@{Bolsa\-Letras}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!BolsaLetras@{Bolsa\-Letras}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Conjunto\-Letras}\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Conjunto\-Letras} \&}]{cl, }
+\item[{{\bf Bolsa\-Letras} \&}]{bl}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classBolsaLetras_ab034eabfb6947531efbcaf79598d7c7a}
+
+
+Sobrecarga del operador $>$$>$ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cl} & conjunto de letras del que rellenar la bolsa \\
+\hline
+{\em bl} & bolsa de letras a rellenar \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/home/pc/\-Desktop/2-\/\-Doble-\/\-Grado/\-E\-D/\-P\-R-\/\-F\-I\-N\-A\-L/letras/include/\hyperlink{BolsaLetras_8h}{Bolsa\-Letras.\-h}\end{DoxyCompactItemize}

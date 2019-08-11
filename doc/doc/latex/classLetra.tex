@@ -1,0 +1,139 @@
+\hypertarget{classLetra}{\section{Letra Class Reference}
+\label{classLetra}\index{Letra@{Letra}}
+}
+
+
+T.\-D.\-A Letras.  
+
+
+
+
+{\ttfamily \#include $<$Letras.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classLetra_a2e236c67e3630258c6d3d9f2a9e66709}{\hyperlink{classLetra_a2e236c67e3630258c6d3d9f2a9e66709}{Letra} ()}\label{classLetra_a2e236c67e3630258c6d3d9f2a9e66709}
+
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\hyperlink{classLetra_a804a0cf4500ade0de00fabafd9584d6a}{Letra} (char c, int n, int p)
+\begin{DoxyCompactList}\small\item\em Constructor de letra. \end{DoxyCompactList}\item 
+char \hyperlink{classLetra_a1ad25981967c28b953d7d91de35d885c}{operator$\ast$} ()
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador $\ast$. \end{DoxyCompactList}\item 
+bool \hyperlink{classLetra_ae0f6f243352d8c30b737f1d79d709b2b}{operator$<$} (const \hyperlink{classLetra}{Letra} \&l1) const 
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador $<$. \end{DoxyCompactList}\item 
+\hypertarget{classLetra_aef45374aff34ec187e033d5c7acd0936}{int \hyperlink{classLetra_aef45374aff34ec187e033d5c7acd0936}{Apariciones} ()}\label{classLetra_aef45374aff34ec187e033d5c7acd0936}
+
+\begin{DoxyCompactList}\small\item\em Devuelve el número de apariciones de la letra. \end{DoxyCompactList}\item 
+\hypertarget{classLetra_a4927d7cefb4b0f2320673b4707780972}{int \hyperlink{classLetra_a4927d7cefb4b0f2320673b4707780972}{get\-Puntuacion} () const }\label{classLetra_a4927d7cefb4b0f2320673b4707780972}
+
+\begin{DoxyCompactList}\small\item\em Devuelve la puntuación de la letra. \end{DoxyCompactList}\item 
+\hypertarget{classLetra_ae6b5f325b309024886f79c674f8b1d1f}{int \hyperlink{classLetra_ae6b5f325b309024886f79c674f8b1d1f}{Caracter} ()}\label{classLetra_ae6b5f325b309024886f79c674f8b1d1f}
+
+\begin{DoxyCompactList}\small\item\em Devuelve el valor de la letra, el caracter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{classLetra_a0c21baaffc309d806b8efa66c39aeabd}{operator$<$$<$} (ostream \&os, const \hyperlink{classLetra}{Letra} \&letra)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador $<$$<$. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+T.\-D.\-A Letras. 
+
+{\bfseries Definición\-:} Una instancia {\itshape l} del tipo de dato abstracto Letras se puede construir como
+\begin{DoxyItemize}
+\item Un char y dos int inicializados a un serie de valores dados
+\item Como una letra \char`\"{}vacía\char`\"{} en la que los elementos tomarán valores por defecto. Cada \hyperlink{classLetra}{Letra} representa un carácter junto sus apariciones y puntuación.
+\end{DoxyItemize}
+
+Para poder usar el T\-D\-A \hyperlink{classLetra}{Letra} se debe incluir el fichero
+
+{\ttfamily \#include \hyperlink{Letras_8h}{Letras.\-h}} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classLetra_a804a0cf4500ade0de00fabafd9584d6a}{\index{Letra@{Letra}!Letra@{Letra}}
+\index{Letra@{Letra}!Letra@{Letra}}
+\subsubsection[{Letra}]{\setlength{\rightskip}{0pt plus 5cm}Letra\-::\-Letra (
+\begin{DoxyParamCaption}
+\item[{char}]{c, }
+\item[{int}]{n, }
+\item[{int}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLetra_a804a0cf4500ade0de00fabafd9584d6a}
+
+
+Constructor de letra. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & caracter de la letra \\
+\hline
+{\em n} & apariciones de la letra \\
+\hline
+{\em p} & puntuacion de la letra \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classLetra_a1ad25981967c28b953d7d91de35d885c}{\index{Letra@{Letra}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Letra@{Letra}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}char Letra\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLetra_a1ad25981967c28b953d7d91de35d885c}
+
+
+Sobrecarga del operador $\ast$. 
+
+\begin{DoxyReturn}{Returns}
+Devuelve el valor de la letra, el caracter 
+\end{DoxyReturn}
+\hypertarget{classLetra_ae0f6f243352d8c30b737f1d79d709b2b}{\index{Letra@{Letra}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Letra@{Letra}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool Letra\-::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Letra} \&}]{l1}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classLetra_ae0f6f243352d8c30b737f1d79d709b2b}
+
+
+Sobrecarga del operador $<$. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em l1} & letra a comparar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+devuelve true si la letra es menor que la letra de l1, false en otro caso 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classLetra_a0c21baaffc309d806b8efa66c39aeabd}{\index{Letra@{Letra}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Letra@{Letra}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{os, }
+\item[{const {\bf Letra} \&}]{letra}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classLetra_a0c21baaffc309d806b8efa66c39aeabd}
+
+
+Sobrecarga del operador $<$$<$. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & ostream donde imprimir la letra \\
+\hline
+{\em letra} & es la letra a imprimir \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/home/pc/\-Desktop/2-\/\-Doble-\/\-Grado/\-E\-D/\-P\-R-\/\-F\-I\-N\-A\-L/letras/include/\hyperlink{Letras_8h}{Letras.\-h}\end{DoxyCompactItemize}

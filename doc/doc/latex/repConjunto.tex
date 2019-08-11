@@ -1,0 +1,29 @@
+\hypertarget{repConjunto_invConjunto}{}\section{Invariante de la representación}\label{repConjunto_invConjunto}
+Sea {\itshape T}, un árbol general sobre el tipo {\itshape Tbase}. Entonces el invariante de representación es Si {\itshape T} es vacío, entonces T.\-laraiz = 0, y si no\-: T.\-laraiz-\/$>$padre = 0\hypertarget{repConjunto_faConjunto}{}\section{Función de abstracción}\label{repConjunto_faConjunto}
+Sea {\itshape T} un árbol general sobre el tipo {\itshape Tbase}, entonces si denotamos también Árbol(T.\-laraiz), es decir, como el árbol que cuelga de su raíz, entonces éste árbol del conjunto de valores en la representación se aplica al árbol
+
+\[ T.laraiz \rightarrow etiqueta, \{Arbol(T.laraiz \rightarrow izqda)\}, \{Arbol(T.laraiz \rightarrow drcha)\}, \] donde \{0\} es el árbol vacío.\hypertarget{repConjunto_invConjunto}{}\section{Invariante de la representación}\label{repConjunto_invConjunto}
+Sea {\itshape T}, una \hyperlink{classBolsaLetras}{Bolsa\-Letras}. El invariante de representación es
+\begin{DoxyItemize}
+\item Si T es vacío T.\-conjunto.\-size() == 0
+\item Si T se lee desde un \hyperlink{classConjuntoLetras}{Conjunto\-Letras} T.\-conjunto.\-size() != 0
+\end{DoxyItemize}\hypertarget{repConjunto_faConjunto}{}\section{Función de abstracción}\label{repConjunto_faConjunto}
+Un objeto válido del {\itshape rep} del T\-D\-A \hyperlink{classBolsaLetras}{Bolsa\-Letras} representa a
+
+(rep.\-bolsa)\hypertarget{repConjunto_invConjunto}{}\section{Invariante de la representación}\label{repConjunto_invConjunto}
+Sea {\itshape T}, un \hyperlink{classConjuntoLetras}{Conjunto\-Letras}. El invariante de representación es
+\begin{DoxyItemize}
+\item Si T es vacío T.\-conjunto.\-size() == 0
+\item Si T se lee desde un archivo T.\-conjunto.\-size() != 0
+\end{DoxyItemize}\hypertarget{repConjunto_faConjunto}{}\section{Función de abstracción}\label{repConjunto_faConjunto}
+Un objeto válido {\itshape rep} del T\-D\-A \hyperlink{classConjuntoLetras}{Conjunto\-Letras} representa a (rep.\-conjunto)\hypertarget{repConjunto_invConjunto}{}\section{Invariante de la representación}\label{repConjunto_invConjunto}
+Sea {\itshape D}, un diccionario. Entonces el invariante de representación es Si {\itshape D} es vacío o no, T.\-datos.\-empty() == false\hypertarget{repConjunto_faConjunto}{}\section{Función de abstracción}\label{repConjunto_faConjunto}
+Un objeto válido {\itshape rep} del T\-D\-A \hyperlink{classDiccionario}{Diccionario} representa a
+
+(rep.\-datos)\hypertarget{repConjunto_invConjunto}{}\section{Invariante de la representación}\label{repConjunto_invConjunto}
+Sea {\itshape T}, una \hyperlink{classLetra}{Letra}. El invariante de representación es
+\begin{DoxyItemize}
+\item Si {\itshape T} es vacío, entonces T.\-caracter = '\textbackslash{}0', T.\-apariciones = 0, T.\-puntuacion=0
+\item Si {\itshape T} no es vacío T.\-caracter, T.\-apariciones, T.\-puntuacion adoptarán los valores introducidos
+\end{DoxyItemize}\hypertarget{repConjunto_faConjunto}{}\section{Función de abstracción}\label{repConjunto_faConjunto}
+Un objeto válido {\itshape rep} del T\-D\-A \hyperlink{classLetra}{Letra} representa a (rep.\-caracter, rep.\-apariciones, rep.\-puntuacion) 

@@ -1,0 +1,123 @@
+\hypertarget{classConjuntoLetras}{\section{Conjunto\-Letras Class Reference}
+\label{classConjuntoLetras}\index{Conjunto\-Letras@{Conjunto\-Letras}}
+}
+
+
+T.\-D.\-A \hyperlink{classConjuntoLetras}{Conjunto\-Letras} {\bfseries Definición\-:} Una instancia {\itshape a} del tipo de abstracto \hyperlink{classConjuntoLetras}{Conjunto\-Letras} se construye a través de un archivo con el que se rellena de una serie de letras. Requiere del T.\-D.\-A \hyperlink{classLetra}{Letra} es un conjunto de letras.  
+
+
+
+
+{\ttfamily \#include $<$Conjunto\-Letras.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classConjuntoLetras_ac280081a69b1abfc21522db42d21450d}{Puntuacion} (string palabra)
+\begin{DoxyCompactList}\small\item\em Devuelve la puntuación de una palabra. \end{DoxyCompactList}\item 
+const \hyperlink{classLetra}{Letra} \& \hyperlink{classConjuntoLetras_a25b6c7933c001598d44f029b5d436241}{operator\mbox{[}$\,$\mbox{]}} (int pos)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador\mbox{[}\mbox{]}. \end{DoxyCompactList}\item 
+\hypertarget{classConjuntoLetras_adb0960e9e7a46a30572a84bb8f154b13}{int \hyperlink{classConjuntoLetras_adb0960e9e7a46a30572a84bb8f154b13}{size} ()}\label{classConjuntoLetras_adb0960e9e7a46a30572a84bb8f154b13}
+
+\begin{DoxyCompactList}\small\item\em Número de elementos de conjunto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{classConjuntoLetras_aa59e208eda77569d326c5e0b7161ae65}{operator$<$$<$} (ostream \&os, const \hyperlink{classConjuntoLetras}{Conjunto\-Letras} \&conjunto\-\_\-l)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador $<$$<$. \end{DoxyCompactList}\item 
+istream \& \hyperlink{classConjuntoLetras_a067df0540e97427ea5d58a66cfbdbda8}{operator$>$$>$} (istream \&is, \hyperlink{classConjuntoLetras}{Conjunto\-Letras} \&conjunto\-\_\-l)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador $>$$>$ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+T.\-D.\-A \hyperlink{classConjuntoLetras}{Conjunto\-Letras} {\bfseries Definición\-:} Una instancia {\itshape a} del tipo de abstracto \hyperlink{classConjuntoLetras}{Conjunto\-Letras} se construye a través de un archivo con el que se rellena de una serie de letras. Requiere del T.\-D.\-A \hyperlink{classLetra}{Letra} es un conjunto de letras. 
+
+Para poder usar el T\-D\-A \hyperlink{classConjuntoLetras}{Conjunto\-Letras} se debe incluir el fichero
+
+{\ttfamily \#include \hyperlink{ConjuntoLetras_8h}{Conjunto\-Letras.\-h}} 
+
+\subsection{Member Function Documentation}
+\hypertarget{classConjuntoLetras_a25b6c7933c001598d44f029b5d436241}{\index{Conjunto\-Letras@{Conjunto\-Letras}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!ConjuntoLetras@{Conjunto\-Letras}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Letra}\& Conjunto\-Letras\-::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classConjuntoLetras_a25b6c7933c001598d44f029b5d436241}
+
+
+Sobrecarga del operador\mbox{[}\mbox{]}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & posición letra a obtener \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+devuelve la letra indicada por la posición pos 
+\end{DoxyReturn}
+\hypertarget{classConjuntoLetras_ac280081a69b1abfc21522db42d21450d}{\index{Conjunto\-Letras@{Conjunto\-Letras}!Puntuacion@{Puntuacion}}
+\index{Puntuacion@{Puntuacion}!ConjuntoLetras@{Conjunto\-Letras}}
+\subsubsection[{Puntuacion}]{\setlength{\rightskip}{0pt plus 5cm}int Conjunto\-Letras\-::\-Puntuacion (
+\begin{DoxyParamCaption}
+\item[{string}]{palabra}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classConjuntoLetras_ac280081a69b1abfc21522db42d21450d}
+
+
+Devuelve la puntuación de una palabra. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em palabra} & palabra a obtener la puntuación \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+suma de la puntuación de cada letra de la palabra, la puntuación de la palabra 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classConjuntoLetras_aa59e208eda77569d326c5e0b7161ae65}{\index{Conjunto\-Letras@{Conjunto\-Letras}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!ConjuntoLetras@{Conjunto\-Letras}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{os, }
+\item[{const {\bf Conjunto\-Letras} \&}]{conjunto\-\_\-l}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classConjuntoLetras_aa59e208eda77569d326c5e0b7161ae65}
+
+
+Sobrecarga del operador $<$$<$. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & ostream donde imprimir el conjunto de letras \\
+\hline
+{\em conjunto\-\_\-l} & conjunto de letras a imprimir \\
+\hline
+\end{DoxyParams}
+\hypertarget{classConjuntoLetras_a067df0540e97427ea5d58a66cfbdbda8}{\index{Conjunto\-Letras@{Conjunto\-Letras}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!ConjuntoLetras@{Conjunto\-Letras}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{istream \&}]{is, }
+\item[{{\bf Conjunto\-Letras} \&}]{conjunto\-\_\-l}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classConjuntoLetras_a067df0540e97427ea5d58a66cfbdbda8}
+
+
+Sobrecarga del operador $>$$>$ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & istream donde leer el conjunto de letras \\
+\hline
+{\em conjunto\-\_\-l} & conjunto de letras donde almacenar los datos leídos \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+/home/pc/\-Desktop/2-\/\-Doble-\/\-Grado/\-E\-D/\-P\-R-\/\-F\-I\-N\-A\-L/letras/include/\hyperlink{ConjuntoLetras_8h}{Conjunto\-Letras.\-h}\end{DoxyCompactItemize}
